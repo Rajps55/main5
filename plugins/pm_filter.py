@@ -661,10 +661,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await save_group_settings(int(grp_id), 'result_page', set_type)
             await query.message.edit_text("Successfully Added Buttons in result mode.")
         elif set_type == "links":
-            await save_group_settings(int(grp_id), 'result_page' set_type)
+            await save_group_settings(int(grp_id), 'result_page', set_type)  # Comma added
             await query.message.edit_text("Successfully Added Links Type in result mode.")
         elif set_type == "telegraph":
-            await save_group_settings(int(grp_id), 'result_page' set_type)
+            await save_group_settings(int(grp_id), 'result_page', set_type)  # Comma added
             await query.message.edit_text("Successfully Added Telegraph Mode in result mode.")
             
     elif query.data == "delete_all":
