@@ -658,7 +658,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if set_type == "result_page":
             await query.message.edit_text("Change Result Mode as your wish", reply_markup=InlineKeyboardMarkup(btn))
         elif set_type == "button":
-            await save_group_settings(int(grp_id), 'result_page' set_type)
+            await save_group_settings(int(grp_id), 'result_page', set_type)
             await query.message.edit_text("Successfully Added Buttons in result mode.")
         elif set_type == "links":
             await save_group_settings(int(grp_id), 'result_page' set_type)
