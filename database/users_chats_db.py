@@ -6,24 +6,24 @@ mydb = client[DATABASE_NAME]
 
 class Database:
     default_setgs = {
-        'auto_filter': AUTO_FILTER,
-        'file_secure': PROTECT_CONTENT,
-        'imdb': IMDB,
-        'spell_check': SPELL_CHECK,
-        'auto_delete': AUTO_DELETE,
-        'welcome': WELCOME,
-        'welcome_text': WELCOME_TEXT,
-        'template': IMDB_TEMPLATE,
-        'caption': FILE_CAPTION,
-        'url': SHORTLINK_URL,
-        'api': SHORTLINK_API,
-        'shortlink': SHORTLINK,
-        'tutorial': TUTORIAL,
-        'links': LINK_MODE,
-        'fsub': AUTH_CHANNEL,
-        'is_stream': IS_STREAM
-        'result_page': DEFAULT_RESULT_MODE
-    }
+    'auto_filter': AUTO_FILTER,
+    'file_secure': PROTECT_CONTENT,
+    'imdb': IMDB,
+    'spell_check': SPELL_CHECK,
+    'auto_delete': AUTO_DELETE,
+    'welcome': WELCOME,
+    'welcome_text': WELCOME_TEXT,
+    'template': IMDB_TEMPLATE,
+    'caption': FILE_CAPTION,
+    'url': SHORTLINK_URL,
+    'api': SHORTLINK_API,
+    'shortlink': SHORTLINK,
+    'tutorial': TUTORIAL,
+    'links': LINK_MODE,
+    'fsub': AUTH_CHANNEL,
+    'is_stream': IS_STREAM,  # Added comma here
+    'result_page': DEFAULT_RESULT_MODE
+}
 
     default_verify = {
         'is_verified': False,
