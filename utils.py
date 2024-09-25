@@ -236,11 +236,12 @@ def get_wish():
         status = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 🌘"
     return status
 
-async def rsltpg_nam(settings):
-    if settings=="button":
+async def rsltpg_name(settings):
+    if settings == "button":
         name = "🧲 Button"
-    elif settings=="links":
+    elif settings == "links":
         name = "⛓️ Links"
     else:
         name = "📰 Telegraph"
     return name
+
